@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<title>OYSCATECH SWD HND1 Platform</title>
+<link rel="stylesheet" href="css/style.css">
+<body>
+<!--Created By Daud Abdul-Gafar Olamilekan-->
+<header>
+<nav>
+    <input type="text" id="switch" hidden value="first">
+    <div class="mymenus">
+        <div class="hambuger" onclick="openham()" id="ham">☰</div>
+        <div class="cancel" onclick="closeham()" id="cancel"> &times;  </div>
+        <div class="mydots" ondblclick="hidedots()" id="mydots">
+           <div class="thedot" id="thedot"  >...</div>
+           <div class="other" onclick="changer()">switch</div>
+        </div>
+        <div class="menusec" id="sec1">
+        <div class='logo'> <img src="image/oyscatech_logo.png" alt="oyscatech_logo"> <p>Oyscatech</p>
+        </div>
+    </div>
+     <div class="menusec" id="sec2">
+         <div class="menus" onclick='gotohome()' id="menu1">home</div>
+         <div class="menus" onclick="gotocourse()" id="menu2">courses</div>
+         <div class="menus" onclick="gotolectures()" id="menu3">Lectures</div>
+         <div class="menus" onclick="gotogpcal()" id="menu4">GP calculator</div>
+         <div class="menus" onclick="gotoabout()" id="menu5">About</div>
+        </div>
+     </div>
+</nav>
+</header>
+<section class="sect sect1" id="home">
+
+
+<div class="greetings">
+    <p class="welcome">Welcome</p> 
+    <p class="to">to</p>
+    <p class="swd">OYSCATECH's HND1 Software and and web Development  platform</p>
+    <button>click here to proceed</button>
+</div>
+
+</section>
+
+<section class="sect sect2 " id="course">
+<div id="courses" class="courses">
+    <div class="swddept">
+        <div class="swdbox">
+            <div class="">SWD</div> 
+            <div onclick="swdhnd1f()">HND1 First Semester Courses</div>
+            <div onclick="swdhnd1s()">HND1 
+                Second Semester Courses</div>
+            <div onclick="swdhnd2f()">HND2 First Semester Courses</div>
+            <div onclick="swdhnd2s()">HND2 Second Semester Courses</div>
+        </div>
+    </div>
+    <div class="nccdept">
+        <div class="nccbox">
+           <div> NCC </div>
+            <div onclick="ncchnd1f()">HND1 First Semester Courses</div>
+            <div onclick="ncchnd1s()">HND1 Second Semester Courses</div>
+            <div onclick="ncchnd2f()">HND2 First Semester Courses</div>
+            <div onclick="ncchnd2s()">HND2 Second Semester Courses</div>
+        </div>
+    </div>
+</div>
+<!--HND1 first semester start-->
+<div class="" id="swdhnd1first">
+ <h1 class="myheadings">Oyscatech SWD HND1 First Sememeter Courses</h1>
+<div class="mytable" id="swdhnd1firsttable">
+ <table id="tab">
+   <thead>
+    <th>SN</th>
+    <th>Course Code</th>
+    <th> Course Title</th>
+    <th>Course Unit</th>
+   </thead>
+   <tbody>
+    <tr>
+        <td>1</td>
+        <td>SWD 311</td>
+        <td>Operating System</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>SWD 312</td>
+        <td>Database Design 1</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>SWD 313</td>
+        <td>C++ Programming</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>SWD 314</td>
+        <td>Operations Research</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>SWD 315</td>
+        <td>Data Communication and Networks</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>SWD 316</td>
+        <td>Introduction to Software Engineering</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>AIT 311</td>
+        <td>Computer Architecture</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>AIT 313</td>
+        <td>Artificial Intelligence</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>9</td>
+        <td>GNS 301</td>
+        <td>Use of English III</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>EED 316</td>
+        <td>Entreprenueship Education</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>11</td>
+        <td>ACC 111</td>
+        <td>Principles of Accouting</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" ><b>Total</b></td>
+        <!-- <td>SWD 311</td> -->
+        <!-- <td>Operating System</td> -->
+        <td id="totalcu">3</td>
+    </tr>
+   </tbody>
+ </table>
+</div>
+<button id="printbtn" onclick="Printmycouseform()" class="printbtn">print</button>
+<button id='exitbtn' onclick="exitfunc()"  class="exitbtn">exit</button>
+</div>
+<!--HND1 first semester Ends-->
+
+<!--HND1 second semester start-->
+<div class="" id="swdhnd1second">
+    <h1 class="myheadings">Oyscatech SWD HND1 Second Sememeter Courses</h1>
+   <div class="mytable" id="swdhnd1secondtable">
+    <table id="tab1">
+      <thead>
+       <th>SN</th>
+       <th>Course Code</th>
+       <th> Course Title</th>
+       <th>Course Unit</th>
+      </thead>
+      <tbody>
+       <tr>
+           <td>1</td>
+           <td>SWD 311</td>
+           <td>Operating System</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>2</td>
+           <td>SWD 312</td>
+           <td>Database Design 1</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>3</td>
+           <td>SWD 313</td>
+           <td>C++ Programming</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>4</td>
+           <td>SWD 314</td>
+           <td>Operations Research</td>
+           <td>1</td>
+       </tr>
+   
+       <tr>
+           <td>5</td>
+           <td>SWD 315</td>
+           <td>Data Communication and Networks</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>6</td>
+           <td>SWD 316</td>
+           <td>Introduction to Software Engineering</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>7</td>
+           <td>AIT 311</td>
+           <td>Computer Architecture</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>8</td>
+           <td>AIT 313</td>
+           <td>Artificial Intelligence</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>9</td>
+           <td>GNS 301</td>
+           <td>Use of English III</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>10</td>
+           <td>EED 316</td>
+           <td>Entreprenueship Education</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>11</td>
+           <td>ACC 111</td>
+           <td>Principles of Accouting</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td colspan="3" ><b>Total</b></td>
+           <!-- <td>SWD 311</td> -->
+           <!-- <td>Operating System</td> -->
+           <td id="totalcu">3</td>
+       </tr>
+      </tbody>
+    </table>
+   </div>
+   <button id="printbtn1" onclick="Printmycouseform1()" class="printbtn">print</button>
+   <button onclick="exitfunc()" class="exitbtn">exit</button>
+   </div>
+<!--HND1 second semester ends-->
+
+<!--HND2 first semester starts-->
+
+<div class="" id="swdhnd2first">
+    <h1 class="myheadings">Oyscatech SWD HND2 First Sememeter Courses</h1>
+   <div class="mytable" id="swdhnd2firsttable">
+    <table id="tab2">
+      <thead>
+       <th>SN</th>
+       <th>Course Code</th>
+       <th> Course Title</th>
+       <th>Course Unit</th>
+      </thead>
+      <tbody>
+       <tr>
+           <td>1</td>
+           <td>SWD 311</td>
+           <td>Operating System</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>2</td>
+           <td>SWD 312</td>
+           <td>Database Design 1</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>3</td>
+           <td>SWD 313</td>
+           <td>C++ Programming</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>4</td>
+           <td>SWD 314</td>
+           <td>Operations Research</td>
+           <td>1</td>
+       </tr>
+   
+       <tr>
+           <td>5</td>
+           <td>SWD 315</td>
+           <td>Data Communication and Networks</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>6</td>
+           <td>SWD 316</td>
+           <td>Introduction to Software Engineering</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>7</td>
+           <td>AIT 311</td>
+           <td>Computer Architecture</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>8</td>
+           <td>AIT 313</td>
+           <td>Artificial Intelligence</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>9</td>
+           <td>GNS 301</td>
+           <td>Use of English III</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>10</td>
+           <td>EED 316</td>
+           <td>Entreprenueship Education</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>11</td>
+           <td>ACC 111</td>
+           <td>Principles of Accouting</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td colspan="3" ><b>Total</b></td>
+           <!-- <td>SWD 311</td> -->
+           <!-- <td>Operating System</td> -->
+           <td id="totalcu">3</td>
+       </tr>
+      </tbody>
+    </table>
+   </div>
+   <button id="printbtn" onclick="Printmycouseform2()" class="printbtn">print</button>
+   <button id='exitbtn' onclick="exitfunc()" class="exitbtn">exit</button>
+   </div>
+
+<!--HND2 swd first semester ends-->
+
+<!--HND2 swd second semester start -->
+<div class="" id="swdhnd2second">
+    <h1 class="myheadings">Oyscatech SWD HND2 Second Sememeter Courses</h1>
+   <div class="mytable" id="swdhnd2secondtable">
+    <table id="tab2">
+      <thead>
+       <th>SN</th>
+       <th>Course Code</th>
+       <th> Course Title</th>
+       <th>Course Unit</th>
+      </thead>
+      <tbody>
+       <tr>
+           <td>1</td>
+           <td>SWD 311</td>
+           <td>Operating System</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>2</td>
+           <td>SWD 312</td>
+           <td>Database Design 1</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>3</td>
+           <td>SWD 313</td>
+           <td>C++ Programming</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>4</td>
+           <td>SWD 314</td>
+           <td>Operations Research</td>
+           <td>1</td>
+       </tr>
+   
+       <tr>
+           <td>5</td>
+           <td>SWD 315</td>
+           <td>Data Communication and Networks</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>6</td>
+           <td>SWD 316</td>
+           <td>Introduction to Software Engineering</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>7</td>
+           <td>AIT 311</td>
+           <td>Computer Architecture</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>8</td>
+           <td>AIT 313</td>
+           <td>Artificial Intelligence</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>9</td>
+           <td>GNS 301</td>
+           <td>Use of English III</td>
+           <td>3</td>
+       </tr>
+   
+       <tr>
+           <td>10</td>
+           <td>EED 316</td>
+           <td>Entreprenueship Education</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td>11</td>
+           <td>ACC 111</td>
+           <td>Principles of Accouting</td>
+           <td>2</td>
+       </tr>
+   
+       <tr>
+           <td colspan="3" ><b>Total</b></td>
+           <!-- <td>SWD 311</td> -->
+           <!-- <td>Operating System</td> -->
+           <td id="totalcu">3</td>
+       </tr>
+      </tbody>
+    </table>
+   </div>
+   <button id="printbtn" onclick="Printmycouseform3()" class="printbtn">print</button>
+   <button onclick="exitfunc()" class="exitbtn">exit</button>
+   </div>
+<!--HND2 swd second semsester ends-->
+
+</section>
+
+<section class="sect sect3" id="lecturer">
+ <h1 class="myheadings">Lecturers in SWD</h1>
+ <div class="lecturecontent">
+
+    <div class="swdlect" onclick="adeola()">Mr Adeola O.O</div>
+    <div class="swdlect" onclick="olowo()">Mr Olowookere A.S</div>
+    <div class="swdlect" onclick="bello()">Mrs Bello G.R</div>
+    <div class="swdlect" onclick="sikiru()">Mr Sikiru Kilani</div>
+    <div class="swdlect" onclick="amao()">Mr Amao </div>
+    <div class="swdlect" onclick="ojo()">Mr Ojo </div>
+    <div class="swdlect" onclick="lateefah()">Mrs Lateefah </div>
+ </div>
+ <div class="lecturedetails" id="details">
+    <div class="modal">
+        <div class="lectimg"> <img  id="limg"></div>     
+     <h3>Name:<span id="lname"></span></h3>
+       <h3>Gender:<span id="lgender"></span></h3>
+       <h3>courses<span id="lcourse"></span></h3>
+       <div class="modalclose" onclick="closelecmodal()">Close</div>
+    </div>
+
+ </div>
+  <!-- lecture secton-->  
+  
+</section>
+
+<section class="sect sect4" id="gpcal">
+    <h1 class="myheadings">this is section 4</h1>
+ 
+</section>
+
+<section class="sect sect5" id="about">
+    <h1 class="myheadings">this is section 5</h1>
+ 
+</section>
+</body>
+<script src="js/myjs.js"></script>
+</html>
+

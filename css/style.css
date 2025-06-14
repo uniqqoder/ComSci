@@ -1,0 +1,534 @@
+:root{
+    --myblue:rgb(2, 2, 75);
+    --mytransblue:rgba(2, 2, 75,0.8);
+    --mycyan:cyan;
+    --mywhite:white;
+    --myfont:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.hambuger{
+    display:none;
+}
+.cancel {
+    display: none;
+}
+#mydots{
+    height:9%;
+    background-color: var(--mytransblue);
+    position:fixed;
+    right:5%;
+    top:10%;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor: pointer;
+
+    
+}
+.thedot{
+    display: flex;
+    border:1px solid var(--mycyan);
+    font-weight:bold;
+    font-size:30px;
+    justify-content:center;
+    align-items: center;
+    height:50px;    
+    /* white-space:nowrap; */
+    border-radius:50px;
+    padding-bottom:15%;
+    margin-bottom:5px; 
+    user-select: none;
+    
+    
+}
+.other{
+    display: flex;
+    border:1px solid var(--mycyan);
+    font-weight:bold;
+    justify-content:center;
+    align-items: center;
+    height:50px;
+    border-radius:50px;
+    white-space:nowrap;
+    padding-bottom:15%; 
+    color:rgb(248, 226, 49);
+}
+.mymenus{
+    background-color:var(--myblue);
+    display:flex;
+    color:var(--mycyan);
+    height: 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+}
+#sec1{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    text-transform:uppercase;
+    font-family:var(--myfont);
+}
+
+#sec1 img{
+    width:50px;
+    height:50px;
+}
+
+#sec2{
+    width:85%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    /* border:1px solid red; */
+
+}
+.menus{
+    background:linear-gradient( var(--myblue)50%,var(--mycyan)50%);
+    background-size:100% 200%;
+    background-position: 0 0;
+    cursor: pointer;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    height:50%;
+    align-items:center;
+    text-transform:uppercase;
+    border-bottom:1px solid var(--mycyan);
+    font-family:var(--myfont);
+}
+.menus:hover{
+    background-position: 0 100%;
+    transition:0.5s;
+    color:var(--myblue);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+    
+}
+.sect{
+    background-color: var(--mycyan);
+    height:100vh;
+    border:1px solid red; 
+}
+
+.myanime{
+    animation: ani 1s;
+    
+  }
+  @keyframes ani{
+  from{transform:scaleY(0.5)}
+   to{transform:scaleY(1)}
+  }
+
+  .sect{
+    /* margin-top:50px; */
+    overflow:hidden;
+  }
+  .sect .myheadings{
+    margin-top:70px;
+    text-align: center;
+    font-family:var(--myfont);
+    color:var(--myblue);
+    text-transform:uppercase;
+  }
+  
+  
+  .greetings{
+    width:50%;
+    margin: 200px auto;
+    text-align: center;
+    animation: greet 0.9s ease-in; 
+    box-shadow: 0 0 10px 5px var(--mytransblue);
+    padding:20px 10px;
+    font-family:var(--myfont);
+    color:var(--myblue);
+    background-color:var(--mywhite)
+    
+  }
+  .welcome{
+    /* display:block; */
+    scale:0;
+    animation: forwelcome 2s ease forwards 1s;
+    text-transform: uppercase;
+  }
+  .to{
+      /* display:block; */
+      scale:0;
+      animation: forto 2s ease 2s forwards;
+      text-transform: uppercase;
+
+  }
+  .swd{
+      width:0%;
+      text-wrap:nowrap;
+      overflow:hidden;
+      animation:forswd forwards 2s ease 4s;
+      border-right:1px solid red;
+      margin-left:11%;
+      text-transform: uppercase;
+      font-weight:900;
+
+  }
+  .greetings button{
+    background-color:var(--myblue);
+    color:var(--mywhite);
+    padding:5px 10px;
+    border-radius:10px;
+  }
+
+  
+  @keyframes greet{
+     from {margin-top:-300px}
+     to{margin-top: 200px;}
+  }
+
+  @keyframes forwelcome{
+    from{scale:0;}
+    to{scale:1;}
+  }
+  @keyframes forto{
+    from{scale:0;}
+    to{scale:1;}
+  }
+  @keyframes forswd{
+     from{width:0%;}
+     to{width:80.3%; border-right:none;}
+  }
+  .mytable{
+    margin:auto;
+    width:80%;
+  }
+ table{
+    border-collapse:collapse;
+    border:1px solid var(--myblue);
+    width:100%;
+
+ }
+ th{
+    border:1px solid var(--mycyan);
+    background: var(--myblue);
+    color: var(--mycyan);
+ }
+ td{
+    border:1px solid var(--myblue);
+    text-align: center;
+    color:var(--myblue);
+ }
+ /* note for mobile*/
+ .printbtn{
+    margin: 10px 46%;
+    padding:5px 15px;
+    border-radius:5px;
+    font-family:var(--myfont);
+    background:var(--myblue);
+    color:var(--mycyan);
+    border:none; 
+ }
+ .exitbtn{
+    margin: 10px 46%;
+    padding:5px 18px;
+    border-radius:5px;
+    font-family:var(--myfont);
+    background:var(--myblue);
+    color:var(--mycyan);
+    border:none; 
+ }
+ /* @media print {
+    table{
+        border-collapse:collapse;
+        border:1px solid var(--myblue);
+        width:100%;
+    
+     }
+     th{
+        border:1px solid var(--mycyan);
+        background: var(--myblue);
+        color: var(--mycyan);
+     }
+     td{
+        border:1px solid var(--myblue);
+        text-align: center;
+        color:var(--myblue);
+     }
+ } */
+
+ #swdhnd1first,#swdhnd1second,#swdhnd2first,#swdhnd2second{
+    display:none;
+ }
+ .courses{
+    display:flex;
+    width: 90%;
+    justify-content:space-between;
+    margin:80px auto;
+ }
+ .courses  > div{
+     width:40%;
+     font-size:30px;
+     height:50vh;
+     text-align: center;
+    border:1px ridge var(--myblue);
+ }
+.swdbox div{
+    margin:20px 0;
+}
+.swdbox div:hover{
+    background-color: var(--mywhite);
+    cursor: pointer;
+    transition:.5s;
+
+
+}
+.nccbox div:hover{
+    background-color: var(--mywhite);
+    cursor: pointer;
+    transition:.5s;
+}
+
+
+.nccbox div{
+    margin:20px 0;
+}
+#lecturer{
+    position:relative;
+}
+
+.swdlect{
+    margin:10px 0;
+    cursor: pointer;
+    padding:10px 0; 
+    
+ }
+ .swdlect:hover{
+    background:var(--mytransblue);
+    color:var(--mycyan)
+ }
+ 
+ .lecturecontent{
+    width:80%;
+    margin:0px auto;
+    text-align: center;
+ }
+ #details{
+    background-color:var(--mytransblue);
+    color:var(--mycyan);
+    display:none;
+    animation:lecturers 0.2s ease-in;
+    width:100%;
+    position:absolute;
+    height:100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+ }
+ @keyframes lecturers {
+    from{scale: 0}
+    to{scale:1}
+ }
+ .lectimg{
+    width:30%;
+    margin:0px auto;
+ }
+
+ .lectimg img{
+    width:100%;
+    height:30%;
+
+ }
+.modalclose{
+    cursor: pointer;
+    padding:5px 10px;
+    margin:3px auto;
+    width:20%;
+    border-radius:5px;
+    text-align: center;
+    border:1px solid var(--mycyan);
+    transition:.2s;
+}
+.modalclose:hover{
+    background:var(--mycyan);
+    color:var(--myblue);
+    
+}
+.modal{
+    margin:100px 0;
+}
+.modal h3{
+    text-align: center;
+}
+.modal h3 span{
+    color:var(--mywhite)
+}
+@media screen and (max-width:450px){
+    body{
+        background-color:yellow;
+    }
+
+    
+    .hambuger{
+        display:block;
+        position: absolute;
+        color:var(--mycyan);
+        font-size:30px;
+        top:15%;
+        left:3%;
+
+        
+    }
+    .cancel {
+        position: absolute;
+        /* display: block; */
+        color:var(--mycyan);
+        font-size:30px;
+        top:15%;
+        left:3%;
+        
+
+
+
+    }
+    #mydots{
+        height:9%;
+        background-color: var(--mytransblue);
+        position:fixed;
+        right:5%;
+        top:1%;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor: pointer;
+        width: 40px;    
+    }
+    .thedot{
+        display: flex;
+        border:1px solid var(--mycyan);
+        font-weight:bold;
+        font-size:20px;
+        justify-content:center;
+        align-items: center;
+        height:50px;    
+        /* white-space:nowrap; */
+        border-radius:50px;
+        padding-bottom:15%;
+        margin-bottom:5px; 
+        user-select: none;
+        
+        
+    }
+    .other{
+        display: flex;
+        border:1px solid var(--mycyan);
+        font-weight:bold;
+        justify-content:center;
+        align-items: center;
+        height:50px;
+        border-radius:50px;
+        white-space:nowrap;
+        padding-bottom:15%; 
+    }
+
+ #sec1{
+    /* border:1px solid red; */
+    width:100%;
+
+ }
+ #sec2{
+    position:absolute;
+    flex-direction:column;
+    height:100%;
+    top:60px;
+    width:0%;
+    background:var(--mytransblue);
+    overflow:hidden;
+    white-space: nowrap;
+    height:100vh;
+
+    
+ }
+
+ .menus{
+    width:50%;
+    height:10%;
+ }
+
+ .greetings{
+    width:90%;
+    padding:15px 3px;
+    
+}
+
+.swd{
+    margin-left:1.2%;
+    font-size:10px;
+    
+}
+
+   @keyframes forswd{
+    from{width:0%;}
+    to{width:98%; border-right:none;}
+ }
+ .mytable{
+    margin:auto;
+    width:100%;
+  }
+
+  .printbtn{
+    margin: 10px 43%;
+
+     }
+     #course{
+        height:120vh;
+     }
+     .courses{
+        display:flex;
+        width: 90%;
+        justify-content:space-between;
+        margin:80px auto;
+        flex-direction:column;
+        align-items:center;
+     }
+     .courses  > div{
+         width:80%;
+         font-size:20px;
+         height:40vh;
+         text-align: center;
+         margin: 20px 0;
+         border:1px ridge var(--myblue);
+     }
+    .swdbox div{
+        margin:20px 0;
+    }
+    .swdbox div:hover{
+        background-color: var(--mywhite);
+        cursor: pointer;
+        transition:.5s;
+    
+    
+    }
+    .nccbox div:hover{
+        background-color: var(--mywhite);
+        cursor: pointer;
+        transition:.5s;
+    }
+    
+    
+    .nccbox div{
+        margin:20px 0;
+    }
+
+}
